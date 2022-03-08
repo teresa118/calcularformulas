@@ -19,7 +19,8 @@ def getSeleccionar():
         masa= float(request.args.get('masa'))
         aceleracion= float(request.args.get('aceleracion'))
         resultado = (masa*aceleracion)
+        resultado2 = ""
        
-    return jsonify ({"resultado":resultado,"resultado2":resultado2})
+    return jsonify ({"resultado":resultado, "resultado2":resultado2})
 if __name__ == '__main__':
     app.run(debug=True, port=4000)
